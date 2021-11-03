@@ -33,7 +33,7 @@ lin:
     googleplus: +jekyll
     keybase: jekyll
 
-theme: lin
+theme: jekyll-theme-midnight
 
 plugins:
  - jekyll-feed
