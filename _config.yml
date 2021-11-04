@@ -1,40 +1,102 @@
-title: Your awesome title
-author: GitHub User
-email: your-email@domain.com
-copyright: © 2019 GitHub User
-description: > # this means to ignore newlines until "show_excerpts:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+# WhatATheme
+markdown: kramdown
 
-show_excerpts: false # set to true to show excerpts on the homepage
+# URL of the Site
+url: "sentientcoffee.github.io"
+# Base URL of the Site (i.e., Name of the Repository in which the Site is hosted)
+baseurl: ""
 
-lin:
-  date_format: "%b %-d, %Y"
+# Title of the Site
+title: Daniel Presas
+# Description of the Site
+description: Programmer for tools, graphics, and networking
+# URL of Image of the Site
+site-image: assets/images/meta.jpg
+# Keywords of the Site
+site-keywords: programmer, graphics, networking, engine, tools, systems
+# URL for the Image of custom Favicon
+favicon-url: assets/images/despresso.png
 
-  # path to the author avatar image
-  avatar_path: assets/images/avatar.jpg
+# URL of the Image of Custom Hero Image (i.e., the image in the background of the very first section of the Homepage)
+heroimage: https://p1.pxfuel.com/preview/793/318/452/source-code-code-programming-c.jpg
 
-  # generate social links
-  social_links:
-    twitter: jekyllrb
-    github:  jekyll
-    medium:  jekyll
-    rss: rss
-    dribbble: jekyll
-    facebook: jekyll
-    flickr:   jekyll
-    instagram: jekyll
-    linkedin: jekyll
-    pinterest: jekyll
-    youtube_user: jekyll
-    youtube_channel: UC8CXR0-3I70i1tfPg1PAE1g
-    telegram: jekyll
-    googleplus: +jekyll
-    keybase: jekyll
+# Social Media and Contact
+# If you don't want to use any icon, you can leave them blank.
+email: daniel.presas2000@gmail.com
+facebook_username:  # thedevslot
+twitter_username:   sentientcoffee
+instagram_username: # thedevslot
+linkedin_username:  daniel-presas
+github_username:    SentientCoffee
+itchio_username:    SentientCoffee
+youtube_channel_id: # UCk_93NXYP-U_AOB5GfWlOow
+reddit_username:    # /
+behance_username:   # /
+dribbble_username:  # /
+spotify_username:   # /
 
-theme: lin
+# Google Analytics
+# google-analytics: UA-163806439-1
 
+# Disqus
+disqus-shortname: sentientcoffee
+
+# Name of the Author
+author-name: Daniel Presas
+# URL for the Image of the Author
+author-image: assets/images/linkedin.jpg
+# 60 Words About the Author
+author-about:  >
+  Experienced game engine and software tools developer with experience in a multitude of languages,
+  such as C, C++, C#, and Flutter + Dart. Have worked with different teams on multiple projects,
+  including mobile and desktop applications. Passionate about advancing the tools and technologies
+  we use to work better and help everyone achieve their goals more effectively and efficiently.
+# URL to the Author's Profile (i.e., Github, Twitter, Stackoverflow, etc)
+author-url: https://github.com/SentientCoffee
+
+# SASS
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Build settings
 plugins:
- - jekyll-feed
- - jekyll-seo-tag
+  - jekyll-admin
+  - jekyll-feed
+
+# Permalink
+permalink: "blog/:title"
+
+# Compress
+compress_html:
+  clippings: all
+
+# Defaults
+defaults:
+  -
+    scope:
+      type: 'posts'
+    values:
+      layout: post
+      post-image: ""
+      description: ""
+      tags:
+        - ""
+  -
+    scope:
+      type: 'pages'
+    values:
+      layout: page
+
+# Exclude
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/

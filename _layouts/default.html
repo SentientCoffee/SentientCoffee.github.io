@@ -1,22 +1,40 @@
-<!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+---
+layout: compress
+---
 
-{%- include head.html -%}
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+
 <body>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        {%- include header.html -%}
-      </div>
-      <div class="col-md-12">
-        <div class="lin-card">
-          {{ content }}
-        </div>
-      </div>
-      <div class="col-md-12">
-        {%- include footer.html -%}
-      </div>
-    </div>
-  </div>
+  {% include navbar.html %}
+  {% include showcase.html %}
+  {% include about.html %}
+  {% include contact.html %}
+  <!--Footer begins here-->
+  {% include footer.html %}
 </body>
+<script>
+  window.addEventListener("scroll", function (event) {
+    var scroll = this.scrollY;
+    var item = document.getElementsByClassName('navbar-item');
+    /* console.log(scroll); */
+    if (scroll < 565) {
+      item[1].classList.add('is-active');
+      item[2].classList.remove('is-active');
+      item[3].classList.remove('is-active');
+    }
+    if (scroll > 565 && scroll < 1130) {
+      item[1].classList.remove('is-active');
+      item[2].classList.add('is-active');
+      item[3].classList.remove('is-active');
+    }
+    if (scroll > 1130) {
+      item[1].classList.remove('is-active');
+      item[2].classList.remove('is-active');
+      item[3].classList.add('is-active');
+    }
+  });
+</script>
+
 </html>
