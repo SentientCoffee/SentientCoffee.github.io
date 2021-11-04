@@ -37,7 +37,6 @@ a.navbar-item.is-active {
     border-color: grey;
 }
 
-
 #hero {
     background: rgb(0, 0, 0);
     background: -moz-linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.75) 100%);
@@ -62,7 +61,7 @@ a.navbar-item.is-active {
     }
 }
 .title {
-    margin: auto 0.75rem!important;
+    margin: auto 0.75rem !important;
 }
 .subtitle {
     letter-spacing: 0.25rem;
@@ -74,7 +73,7 @@ a.navbar-item.is-active {
         margin: auto;
 
         img {
-            border: 0.20rem dotted black;
+            border: 0.2rem dotted black;
         }
     }
 
@@ -96,7 +95,7 @@ a.navbar-item.is-active {
         margin: auto 0.75vmax;
 
         &:hover {
-            transform: scale(1.10);
+            transform: scale(1.1);
             filter: opacity(0.75);
         }
     }
@@ -197,7 +196,6 @@ a.navbar-item.is-active {
     }
 }
 
-
 #footer {
     #backtotop {
         transition: all 0.25s ease;
@@ -223,7 +221,7 @@ a.navbar-item.is-active {
                 list-style: circle;
                 list-style-position: outside;
             }
-            
+
             a {
                 color: #7a7a7a;
 
@@ -238,11 +236,10 @@ a.navbar-item.is-active {
                 justify-content: center;
                 margin: auto;
                 transition: all 0.25s ease;
-                &:hover{
+                &:hover {
                     transform: scale(1.15);
                 }
             }
-
         }
 
         .column.fa-ul {
@@ -291,11 +288,40 @@ a.navbar-item.is-active {
     .card {
         transition: all 0.25s ease;
         &:hover {
-            background-color: rgba($color: #000000, $alpha: 0.90)!important;
+            background-color: rgba($color: #000000, $alpha: 0.9) !important;
         }
     }
     .image.is-3by1 {
         padding-top: 60%;
+    }
+}
+
+#project-page {
+    .title {
+        padding-bottom: 1rem;
+    }
+
+    .column.content {
+        margin: 0.5rem;
+    }
+
+    .video-wrapper {
+        position: relative;
+        padding-bottom: 56.25%;
+
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    img {
+        margin: 0.25rem 0;
+        width: 100%;
+        height: auto;
     }
 }
 
@@ -327,20 +353,24 @@ a.navbar-item.is-active {
         margin: 0.15rem auto;
     }
     .content {
-        ol, ul, blockquote {
+        ol,
+        ul,
+        blockquote {
             display: inline-block;
         }
-        hr{
+        hr {
             background-color: grey;
         }
-        img, iframe {
+        img,
+        iframe {
             max-width: calc(100% - 25vw);
             margin: 0.25rem auto;
             @media (max-width: 768px) {
                 max-width: calc(100% - 5vw);
             }
         }
-        ul, ol {
+        ul,
+        ol {
             display: inline-block;
         }
     }
@@ -358,7 +388,9 @@ a.navbar-item.is-active {
 
 #page-section {
     .content {
-        ul, ol, blockquote {
+        ul,
+        ol,
+        blockquote {
             display: inline-block;
         }
     }

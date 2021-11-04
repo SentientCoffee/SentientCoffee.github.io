@@ -10,14 +10,36 @@ layout: compress
   {% include navbar.html %}
   <section class="hero is-fullheight">
     <div class="hero-body">
-      <div class="container has-text-centered" id="page-section">
+      <div class="container has-text-centered" id="project-page">
         <div class="section">
           <h1 class="title is-1 is-uppercase has-text-weight-bold">
-            {{page.title}}
+            {{ page.title }}
           </h1>
+          <div>
+            <a href="{{ page.link }}" target="_blank" class="button is-rounded is-uppercase has-text-weight-normal is-black is-outlined">
+              Open project page
+            </a>
+          </div>
           <hr class="has-background-black">
-          <div class="content is-marginless">
-            {{ content }}
+          <div class="container">
+            <div class="columns">
+              <div class="column is-one-third-desktop is-one-third-fullhd">
+                {% unless page.video_link == '' %}
+                <div class="video-wrapper">
+                  <iframe width="640" height="360" src="{{ page.video_link }}" title="{{ page.title }}" frameborder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                  </iframe>
+                </div>
+                <hr class="has-background-black">
+                {% endunless %}
+                {% for screenshot in page.screenshots %}
+                <img src="{{ site.url }}{{ site.baseurl | relative_url }}/{{ screenshot }}" />
+                {% endfor %}
+              </div>
+              <div class="column content has-text-left-desktop has-text-left-tablet has-text-left-fullhd has-text-left-widescreen">
+                {{ content }}
+              </div>
+            </div>
           </div>
         </div>
       </div>
