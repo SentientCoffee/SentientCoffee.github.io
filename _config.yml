@@ -11,11 +11,11 @@ title: Daniel Presas
 # Description of the Site
 description: Programmer for tools, graphics, and networking
 # URL of Image of the Site
-site-image: assets/images/meta.jpg
+site-image: /assets/images/meta.jpg
 # Keywords of the Site
 site-keywords: programmer, graphics, networking, engine, tools, systems
 # URL for the Image of custom Favicon
-favicon-url: assets/images/despresso.png
+favicon-url: /assets/images/despresso.png
 
 # URL of the Image of Custom Hero Image (i.e., the image in the background of the very first section of the Homepage)
 heroimage: https://p1.pxfuel.com/preview/793/318/452/source-code-code-programming-c.jpg
@@ -23,17 +23,17 @@ heroimage: https://p1.pxfuel.com/preview/793/318/452/source-code-code-programmin
 # Social Media and Contact
 # If you don't want to use any icon, you can leave them blank.
 email: daniel.presas2000@gmail.com
-facebook_username:  # thedevslot
-twitter_username:   sentientcoffee
-instagram_username: # thedevslot
-linkedin_username:  daniel-presas
 github_username:    SentientCoffee
 itchio_username:    SentientCoffee
+linkedin_username:  daniel-presas
+twitter_username:   sentientcoffee
 youtube_channel_id: # UCk_93NXYP-U_AOB5GfWlOow
 reddit_username:    # /
+spotify_username:   # /
+facebook_username:  # thedevslot
+instagram_username: # thedevslot
 behance_username:   # /
 dribbble_username:  # /
-spotify_username:   # /
 
 # Google Analytics
 # google-analytics: UA-163806439-1
@@ -44,13 +44,19 @@ disqus-shortname: sentientcoffee
 # Name of the Author
 author-name: Daniel Presas
 # URL for the Image of the Author
-author-image: assets/images/linkedin.jpg
+author-image: /assets/images/linkedin.jpg
 # 60 Words About the Author
-author-about:  >
+author-about: >
   Experienced game engine and software tools developer with experience in a multitude of languages,
-  such as C, C++, C#, and Flutter + Dart. Have worked with different teams on multiple projects,
-  including mobile and desktop applications. Passionate about advancing the tools and technologies
-  we use to work better and help everyone achieve their goals more effectively and efficiently.
+  such as C, C++, C#, and Flutter + Dart.
+author-about-long: >
+  Hi, I'm Daniel Presas. I'm an experienced game engine and software tools developer, with interests in many
+  different technologies and languages that can help me achieve my goals. I have worked with many different
+  teams, as well as on my own, on a multitude of projects ranging from computer vision to audio to mobile applications,
+  although my primary passion lies with game engines and the different technologies required to run them, such
+  as graphics rendering, networking, and code architecture. Being involved in this space allows me to be able to help
+  and advance the tools and technologies we use on a daily basis so that other people can work better, and reach their
+  goals more effectively.
 # URL to the Author's Profile (i.e., Github, Twitter, Stackoverflow, etc)
 author-url: https://github.com/SentientCoffee
 
@@ -87,6 +93,11 @@ defaults:
       type: 'pages'
     values:
       layout: page
+
+# Collections
+collections:
+  projects:
+    output: true
 
 # Exclude
 exclude:
