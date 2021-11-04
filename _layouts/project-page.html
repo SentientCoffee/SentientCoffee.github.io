@@ -40,7 +40,13 @@ layout: compress
             </div>
             <hr class="has-background-black">
             {% for screenshot in page.screenshots %}
+            {% assign u = screenshot | split: "/" | first %}
+            {% case u %}
+            {% when "http:", "https:" %}
+            <img src="{{ screenshot }}" />
+            {% else %}
             <img src="{{ site.url }}{{ site.baseurl | relative_url }}/{{ screenshot }}" />
+            {% endcase %}
             {% endfor %}
           </div>
         </div>

@@ -1,6 +1,7 @@
 ---
 layout: project-page
 name: Primordial
+year: 202008
 image: https://img.itch.zone/aW1nLzQzNzI1ODMucG5n/315x250%23c/shog8p.png
 link: https://promethaes.itch.io/primordial
 video_link: https://www.youtube.com/embed/iZOTqHBXW2M
