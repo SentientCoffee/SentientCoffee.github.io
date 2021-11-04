@@ -8,15 +8,15 @@
     <div class="container columns">
       <!--Name Section-->
       <div class="column has-text-left-desktop has-text-centered-mobile">
-        <a href="{{site.url}}{{ site.baseurl | relative_url }}/#about">
+        <a href="{{ site.url }}{{ site.baseurl | relative_url }}/#about">
           <div class="columns">
             <div class="column is-one-fifth-desktop is-one-fifth-fullhd is-one-quarter-tablet">
               <figure class="image is-64x64">
-                <img class="is-rounded" src="{{site.author-image}}">
+                <img class="is-rounded" src="{{ site.author-image }}">
               </figure>
             </div>
             <div class="column is-marginless">
-              <h5 class="has-text-grey-lighter">{{site.author-name}}</h5>
+              <h5 class="has-text-grey-lighter">{{ site.author-name }}</h5>
               <div class="content has-text-grey">
                 <p>{{site.author-about | truncate: 140 }}</p>
               </div>
@@ -31,7 +31,7 @@
                 {% for sitepage in site.html_pages offset: 4 %}
                 {% unless sitepage.url == '/' limit: 2 %}
                 <li>
-                    <a href="{{sitepage.url | absolute_url}}">{{sitepage.title}}</a>
+                    <a href="{{ sitepage.url | absolute_url }}">{{ sitepage.title }}</a>
                 </li>
                 {% endunless %}
                 {% endfor %}
@@ -41,7 +41,7 @@
                     </a>
                 </li>
                 <li>
-                    <a target="_blank" href="{{site.url}}{{ site.baseurl | relative_url }}/feed.xml">Subscribe via RSS</a>
+                    <a target="_blank" href="{{ site.url }}{{ site.baseurl | relative_url }}/feed.xml">Subscribe via RSS</a>
                 </li>
             </div> -->
 
@@ -50,7 +50,7 @@
         <h3>Contact me</h3>
         {% unless site.github_username == %}
         <li>
-          <a href="http://www.github.com/{{site.github_username}}" target="_blank" class="has-text-grey">
+          <a href="http://www.github.com/{{ site.github_username }}" target="_blank" class="has-text-grey">
             <i class="fa-li fa-fw fab fa-github has-text-white"></i>
             Github
           </a>
@@ -58,7 +58,7 @@
         {% endunless %}
         {% unless site.itchio_username == %}
         <li>
-          <a href="http://{{site.itchio_username}}.itch.io" target="_blank" class="has-text-grey">
+          <a href="http://{{ site.itchio_username }}.itch.io" target="_blank" class="has-text-grey">
             <i class="fa-li fa-fw fab fa-itch-io has-text-white"></i>
             itch.io
           </a>
@@ -66,7 +66,7 @@
         {% endunless %}
         {% unless site.linkedin_username == %}
         <li>
-          <a href="http://www.linkedin.com/in/{{site.linkedin_username}}" target="_blank" class="has-text-grey">
+          <a href="http://www.linkedin.com/in/{{ site.linkedin_username }}" target="_blank" class="has-text-grey">
             <i class="fa-li fa-fw fab fa-linkedin has-text-white"></i>
             Linkedin
           </a>
@@ -74,7 +74,7 @@
         {% endunless %}
         {% unless site.twitter_username == %}
         <li>
-          <a href="http://www.twitter.com/{{site.twitter_username}}" target="_blank" class="has-text-grey">
+          <a href="http://www.twitter.com/{{ site.twitter_username }}" target="_blank" class="has-text-grey">
             <i class="fa-li fa-fw fab fa-twitter has-text-white"></i>
             Twitter
           </a>
@@ -82,7 +82,7 @@
         {% endunless %}
         {% unless site.youtube_channel_id == %}
         <li>
-          <a href="http://www.youtube.com/channel/{{site.youtube_channel_id}}" target="_blank" class="has-text-grey">
+          <a href="http://www.youtube.com/channel/{{ site.youtube_channel_id }}" target="_blank" class="has-text-grey">
             <i class="fa-li fa-fw fab fa-youtube has-text-white"></i>
             Youtube
           </a>
@@ -90,7 +90,7 @@
         {% endunless %}
         {% unless site.reddit_username == %}
         <li>
-          <a href="http://www.reddit.com/u/{{site.reddit_username}}" target="_blank" class="has-text-grey">
+          <a href="http://www.reddit.com/u/{{ site.reddit_username }}" target="_blank" class="has-text-grey">
             <i class="fa-li fa-fw fab fa-reddit has-text-white"></i>
             Reddit
           </a>
@@ -98,7 +98,7 @@
         {% endunless %}
         {% unless site.spotify_username == %}
         <li>
-          <a href="http://open.spotify.com/user/{{site.spotify_username}}" target="_blank" class="has-text-grey">
+          <a href="http://open.spotify.com/user/{{ site.spotify_username }}" target="_blank" class="has-text-grey">
             <i class="fa-li fa-fw fab fa-spotify has-text-white"></i>
             Spotify
           </a>
@@ -106,7 +106,7 @@
         {% endunless %}
         {% unless site.facebook_username == %}
         <li>
-          <a href="http://www.facebook.com/{{site.facebook_username}}" target="_blank" class="has-text-grey">
+          <a href="http://www.facebook.com/{{ site.facebook_username }}" target="_blank" class="has-text-grey">
             <i class="fa-li fa-fw fab fa-facebook has-text-white"></i>
             Facebook
           </a>
@@ -114,7 +114,7 @@
         {% endunless %}
         {% unless site.instagram_username == %}
         <li>
-          <a href="http://www.instagram.com/{{site.instagram_username}}" target="_blank" class="has-text-grey">
+          <a href="http://www.instagram.com/{{ site.instagram_username }}" target="_blank" class="has-text-grey">
             <i class="fa-li fa-fw fab fa-instagram has-text-white"></i>
             Instagram
           </a>
@@ -122,7 +122,7 @@
         {% endunless %}
         {% unless site.behance_username == %}
         <li>
-          <a href="http://www.behance.com/{{site.behance_username}}" target="_blank" class="has-text-grey">
+          <a href="http://www.behance.com/{{ site.behance_username }}" target="_blank" class="has-text-grey">
             <i class="fa-li fa-fw fab fa-behance has-text-white"></i>
             Behance
           </a>
@@ -130,7 +130,7 @@
         {% endunless %}
         {% unless site.dribbble_username == %}
         <li>
-          <a href="http://www.dribbble.com/{{site.dribbble_username}}" target="_blank" class="has-text-grey">
+          <a href="http://www.dribbble.com/{{ site.dribbble_username }}" target="_blank" class="has-text-grey">
             <i class="fa-li fa-fw fab fa-dribbble has-text-white"></i>
             Dribble
           </a>
@@ -144,7 +144,7 @@
                 <h3>Recent Posts</h3>
                 {% for post in site.posts offset: 0 limit:3 %}
                 <li>
-                    <a href="{{post.url | absolute_url}}">{{post.title}}</a>
+                    <a href="{{ post.url | absolute_url }}">{{ post.title }}</a>
                 </li>
                 {% endfor %}
             </div> -->
@@ -154,7 +154,7 @@
     <i class="far fa-copyright"></i>
     {{ "now" | date: "%Y" }} {{ site.author-name }}
     | Powered by
-    <a href="{{ site.author-url }}/{{ site.url }}" target="_blank">
+    <a href="{{ site.author-url }}/{{ site.url | remove: 'https://' | remove: 'http://' }}" target="_blank">
       Github Pages
     </a>
   </div>
