@@ -7,12 +7,12 @@
         <figure class="image is-3by1" style="background-image: url({{project.image}});"></figure>
         <div class="card-content">
           <h1 class="title has-text-white is-size-4">{{ project.name }}</h1>
-          <p class="has-text-white has-text-weight-light content">{{ project.description | truncate: 120 }}</p>
-          <div>
-            <a href="{{ project.link }}" target="_blank" class="button is-rounded is-uppercase has-text-weight-light is-outlined">
-              Open
-            </a>
-          </div>
+          <p class="has-text-white has-text-weight-light content">{{ project.description | truncate: 200 }}</p>
+        </div>
+        <div>
+          <a href="{{ project.link }}" target="_blank" class="button is-rounded is-uppercase has-text-weight-light is-white is-outlined">
+            Open
+          </a>
         </div>
       </div>
     </a>

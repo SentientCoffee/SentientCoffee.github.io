@@ -277,11 +277,17 @@ a.navbar-item.is-active {
 #project {
     .columns {
         .column {
+            position: relative;
             border-radius: 0.5rem;
+
             .image {
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: cover;
+            }
+            
+            .button {
+                margin-bottom: 1.5rem !important;
             }
         }
     }
@@ -293,17 +299,20 @@ a.navbar-item.is-active {
         transform: scale(0.95);
         transition: all 0.5s ease;
         margin-bottom: 0.5rem !important;
-        display: inline-table;
+        display: inline-flex;
         &:hover {
             transform: scale(0.975);
         }
     }
+
     .card {
         transition: all 0.25s ease;
         &:hover {
             background-color: rgba($color: #000000, $alpha: 0.9) !important;
         }
+
     }
+
     .image.is-3by1 {
         padding-top: 60%;
     }

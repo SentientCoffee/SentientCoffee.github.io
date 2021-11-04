@@ -18,22 +18,24 @@ layout: compress
           <hr class="has-background-black">
           <div class="container">
             <div class="columns">
+              {% if page.video_link %}
               <div class="column is-one-third-desktop is-one-third-fullhd is-one-third-tablet">
-                {% unless page.video_link == '' %}
                 <div class="video-wrapper">
                   <iframe width="640" height="360" src="{{ page.video_link }}" title="{{ page.title }}" frameborder="0"
                           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
                   </iframe>
                 </div>
-                {% endunless %}
               </div>
+              {% endif %}
               <div class="column content has-text-left-desktop has-text-left-tablet has-text-left-fullhd has-text-left-widescreen">
                 {{ content }}
+                {% if page.link %}
                 <div>
                   <a href="{{ page.link }}" target="_blank" class="button is-rounded is-uppercase has-text-weight-normal is-black is-outlined">
                     Open project page
                   </a>
                 </div>
+                {% endif %}
               </div>
             </div>
             <hr class="has-background-black">
