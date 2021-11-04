@@ -18,5 +18,9 @@ Earth's Light is a cooperative action-adventure game following the story of four
 
 # Responsibilites
 
-Gaming
-
+- Knowledge in using the Unity game engine and its various features for acommercial release
+- Gained experience in making a server-client implementation of networking
+between different machines using sockets
+- Designed and implemented the backends for different systems such as the
+menus, level transitions, and networking management on both sides of the
+connection

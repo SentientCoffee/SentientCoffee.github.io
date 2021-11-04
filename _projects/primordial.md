@@ -18,4 +18,5 @@ Primordial is a rogue-like, fast-paced, first-person, looter shooter inspired by
 
 # Responsibilites
 
-Gaming
+- Gained experience with building 3D game engine technologies from the groundup, using windowing systems, custom input/event handling, and sound output
+- Made an intermediate level OpenGL-based deferred renderer with different features such as post-processing effects, lighting and shadows, and framebuffers

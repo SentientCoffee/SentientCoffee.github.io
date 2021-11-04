@@ -4,7 +4,7 @@ markdown: kramdown
 # URL of the Site
 url: https://sentientcoffee.github.io
 # Base URL of the Site (i.e., Name of the Repository in which the Site is hosted)
-baseurl:
+# baseurl:
 
 # Title of the Site
 title: Daniel Presas
@@ -81,6 +81,7 @@ compress_html:
 defaults:
   -
     scope:
+      path: ''
       type: 'posts'
     values:
       layout: post
@@ -90,6 +91,7 @@ defaults:
         - ""
   -
     scope:
+      path: ''
       type: 'pages'
     values:
       layout: page
