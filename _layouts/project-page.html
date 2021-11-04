@@ -15,11 +15,6 @@ layout: compress
           <h1 class="title is-1 is-uppercase has-text-weight-bold">
             {{ page.title }}
           </h1>
-          <div>
-            <a href="{{ page.link }}" target="_blank" class="button is-rounded is-uppercase has-text-weight-normal is-black is-outlined">
-              Open project page
-            </a>
-          </div>
           <hr class="has-background-black">
           <div class="container">
             <div class="columns">
@@ -30,16 +25,21 @@ layout: compress
                           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
                   </iframe>
                 </div>
-                <hr class="has-background-black">
                 {% endunless %}
-                {% for screenshot in page.screenshots %}
-                <img src="{{ site.url }}{{ site.baseurl | relative_url }}/{{ screenshot }}" />
-                {% endfor %}
               </div>
               <div class="column content has-text-left-desktop has-text-left-tablet has-text-left-fullhd has-text-left-widescreen">
                 {{ content }}
+                <div>
+                  <a href="{{ page.link }}" target="_blank" class="button is-rounded is-uppercase has-text-weight-normal is-black is-outlined">
+                    Open project page
+                  </a>
+                </div>
               </div>
             </div>
+            <hr class="has-background-black">
+            {% for screenshot in page.screenshots %}
+            <img src="{{ site.url }}{{ site.baseurl | relative_url }}/{{ screenshot }}" />
+            {% endfor %}
           </div>
         </div>
       </div>
