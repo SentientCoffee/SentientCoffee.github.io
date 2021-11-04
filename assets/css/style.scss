@@ -59,6 +59,10 @@ a.navbar-item.is-active {
         opacity: 0.25;
         content: "";
     }
+
+    a {
+        min-width: 15vmax;
+    }
 }
 .title {
     margin: auto 0.75rem !important;
@@ -75,6 +79,10 @@ a.navbar-item.is-active {
         img {
             border: 0.2rem dotted black;
         }
+    }
+
+    .button {
+        display: inline-block;
     }
 
     a {
@@ -218,15 +226,20 @@ a.navbar-item.is-active {
             justify-content: center;
 
             li {
+                margin: 0.15rem;
                 list-style: circle;
                 list-style-position: outside;
+
+                a:hover {
+                    border-bottom: 0.05rem solid white;
+                }
             }
 
             a {
                 color: #7a7a7a;
 
                 &:hover {
-                    color: white;
+                    color: white !important;
                 }
             }
 
