@@ -8,10 +8,10 @@
         {{site.description}}
       </h3>
       <hr>
-      <a href="{{ site.url }}{{ site.baseurl }}/#about"
+      <a href="{{ site.url }}{{ site.baseurl | relative_url }}/#about"
         class="button is-white is-rounded is-outlined is-uppercase has-text-weight-normal">About</a>
       </a>
-      <a href="{{ site.url }}{{ site.baseurl }}/projects"
+      <a href="{{ site.url }}{{ site.baseurl | relative_url }}/projects"
         class="button is-white is-rounded is-outlined is-uppercase has-text-weight-normal">Projects</a>
       </a>
     </div>
