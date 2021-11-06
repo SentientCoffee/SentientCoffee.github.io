@@ -285,7 +285,7 @@ a.navbar-item.is-active {
                 background-repeat: no-repeat;
                 background-size: cover;
             }
-            
+
             .button {
                 margin-bottom: 1.5rem !important;
             }
@@ -375,14 +375,19 @@ a.navbar-item.is-active {
         margin: 0.15rem auto;
     }
     .content {
-        ol,
-        ul,
+
         blockquote {
             display: inline-block;
         }
+
         hr {
             background-color: grey;
         }
+
+        p {
+            margin-bottom: 0.25rem;
+        }
+
         img,
         iframe {
             max-width: calc(100% - 25vw);
@@ -391,9 +396,11 @@ a.navbar-item.is-active {
                 max-width: calc(100% - 5vw);
             }
         }
+
         ul,
         ol {
             display: inline-block;
+            margin: 0.25rem 1.5rem;
         }
     }
 

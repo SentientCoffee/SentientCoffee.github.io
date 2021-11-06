@@ -11,7 +11,9 @@ tags:
 ---
 
 This post will show you how the content will look like in the post pages and how the headlines, quotes and quotes will be represented. Jekyll is mainly used to write simple markdown and after that it renders out a static pages, so you need to know the basics of writing markdown for that.
+
 For more information about writing markdown you can checkout the following markdown cheatsheets:
+
 * [Mastering Markdown](https://guides.github.com/features/mastering-markdown/)
 * [Markdown Guide](https://www.markdownguide.org/cheat-sheet/)
 * [GitHub Flavored Markdown Spec](https://github.github.com/gfm/)
@@ -19,10 +21,15 @@ For more information about writing markdown you can checkout the following markd
 ---
 
 # This is the h1 text
+
 ## This is the h2 text
+
 ### This is the h3 text
+
 #### This is the h4 text
+
 ##### This is the h5 text
+
 ###### This is the h6 text
 
 **Bold Text in the post will look like:**<br>
@@ -35,10 +42,15 @@ For more information about writing markdown you can checkout the following markd
 
 `Codes on your post will look like this`
 
-**Link in the post will look like:**<br>
+```cpp
+const std::string s = "Code blocks will look like this"
+```
+
+**Link in the post will look like:**  
 [This is a link](#)
 
 **Bullet list in the post will look like:**
+
 * Item 1
 * Item 2
 * Item 3
@@ -46,6 +58,7 @@ For more information about writing markdown you can checkout the following markd
 * Item 5
 
 **Number list in the post will look like:**
+
 1. Item 1
 2. Item 2
 3. Item 3
@@ -53,7 +66,8 @@ For more information about writing markdown you can checkout the following markd
 5. Item 5
 
 **Images in the post will look like:**<br>
-![Test Image](/WhatATheme/assets/images/1280x720%20Placeholder.png)
+![Test Image](/assets/images/default/1280x720%20Placeholder.png)
+![Meta](/assets/images/default/meta.jpg)
 
 **Normal text in the post will look like**<br>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris id finibus nisl. Etiam in hendrerit est. Nulla non erat ac lectus interdum lobortis. Vestibulum at mi ex. Mauris nisl mi, venenatis et feugiat nec, finibus porttitor velit. Suspendisse tincidunt lobortis leo, quis tristique tellus iaculis quis. Donec eleifend pulvinar gravida. Proin non lorem eros. Donec sit amet finibus ex, eget vestibulum nunc. Ut ut enim id purus porttitor tristique. Vivamus tincidunt eleifend hendrerit. Proin metus felis, ultrices vel dui in, porta dapibus dui. Sed sagittis ex vitae dui tristique dignissim. Cras vel leo ipsum.
@@ -64,8 +78,8 @@ Vestibulum vitae fermentum velit, rhoncus egestas orci. Nulla at purus ut orci p
 
 Donec imperdiet, lectus eget congue cursus, dolor enim finibus risus, ut molestie lorem tellus non tortor. Donec quam nibh, molestie in dapibus et, efficitur non tortor. Morbi orci tellus, mollis vel mi vitae, auctor lobortis erat. Ut gravida velit eget ligula lacinia, id rhoncus tellus gravida. Maecenas laoreet rutrum consequat. Suspendisse sed nibh dui. Curabitur dictum euismod mollis. Sed egestas libero libero, eu accumsan augue placerat non. Nunc id condimentum orci. Mauris vitae sollicitudin quam.
 
-**Giphy Gifs will look like:**<br>
+**Giphy gifs will look like:**<br>
 <iframe src="https://giphy.com/embed/ZqlvCTNHpqrio" width="480" height="259" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/laughing-despicable-me-minions-ZqlvCTNHpqrio">via GIPHY</a></p>
 
-**YouTUbe Videos will look like:**<br>
+**YouTube videos will look like:**<br>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/jTPXwbDtIpA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
