@@ -1,6 +1,6 @@
 ---
-layout: project-page
 name: Thermocheck Infrared Temperature Reader
+slug: ediom-thermocheck
 year: 202004
 image: assets/images/projects/ediom-thermocheck/ediom-logo.png
 link: https://github.com/DanielPresas/ThermocheckApp

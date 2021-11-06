@@ -1,5 +1,4 @@
 ---
-layout: project-page
 name: Primordial
 year: 202008
 image: https://img.itch.zone/aW1nLzQzNzI1ODMucG5n/315x250%23c/shog8p.png

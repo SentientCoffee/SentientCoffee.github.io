@@ -1,6 +1,6 @@
 ---
-layout: project-page
 name: Earth's Light
+slug: earths-light
 year: 202108
 image: https://img.itch.zone/aW1nLzU1MzE5MDIucG5n/315x250%23c/7VAG76.png
 link: https://hamraj-rai.itch.io/earths-light

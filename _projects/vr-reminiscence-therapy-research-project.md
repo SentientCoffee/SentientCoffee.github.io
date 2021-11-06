@@ -1,6 +1,6 @@
 ---
-layout: project-page
 name: VR Reminiscence Therapy
+slug: vr-reminiscence-therapy
 year: 202102
 image: https://img1.wsimg.com/isteam/ip/84397a79-be1f-4af1-97da-40b794b2feb0/photos-256889_1920.jpg
 link: https://maxsimhealth.com/winniesun2021

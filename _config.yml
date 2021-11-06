@@ -71,18 +71,24 @@ plugins:
   - jekyll-feed
 
 # Permalink
-permalink: "blog/:title"
+permalink: "blog/:slug"
 
 # Compress
 compress_html:
   clippings: all
 
+# Collections
+collections:
+  projects:
+    output: true
+    permalink: ":collection/:slug"
+
 # Defaults
 defaults:
   -
     scope:
-      path: ''
-      type: 'posts'
+      path: ""
+      type: "posts"
     values:
       layout: post
       post-image: ""
@@ -91,20 +97,22 @@ defaults:
         - ""
   -
     scope:
-      path: ''
-      type: 'pages'
+      path: ""
+      type: "pages"
     values:
       layout: page
-
-# Collections
-collections:
-  projects:
-    output: true
+  -
+    scope:
+      path: ""
+      type: projects
+    values:
+      layout: project-page
 
 # Exclude
 exclude:
   - .sass-cache/
   - .jekyll-cache/
+  - .vscode/
   - gemfiles/
   - Gemfile
   - Gemfile.lock
