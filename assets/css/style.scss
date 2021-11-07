@@ -2,6 +2,7 @@
 ---
 
 @import "main.scss";
+@import "tango.css";
 
 #navbar {
     opacity: 0.95;
@@ -119,7 +120,11 @@ a.navbar-item.is-active {
     }
 
     .container {
-        margin: 1.5rem auto;
+        margin: 3rem auto 0 auto;
+    }
+
+    .level:not(:last-child) {
+        margin-bottom: 0.5rem;
     }
 
     #blog-card {
@@ -180,7 +185,9 @@ a.navbar-item.is-active {
 }
 
 #search {
-    border-bottom: 0.15rem solid;
+    border-bottom: 0.1rem solid;
+    border-color: #7a7a7a;
+    margin: auto 0.75rem;
 
     input {
         border: none;

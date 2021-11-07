@@ -8,9 +8,9 @@ video_link: https://www.youtube.com/embed/ItPgzlPxPJc
 description: >
   Cooperative action-adventure game following the story of four animals and their journey to save their ecosystems.
 screenshots:
-  - assets/images/projects/earth's-light/image0.jpg
-  - assets/images/projects/earth's-light/image1.png
-  - assets/images/projects/earth's-light/image2.jpg
+  - assets/images/projects/earths-light/image0.jpg
+  - assets/images/projects/earths-light/image1.png
+  - assets/images/projects/earths-light/image2.jpg
 ---
 
 # Description

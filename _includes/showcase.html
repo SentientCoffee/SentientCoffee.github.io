@@ -2,18 +2,14 @@
   <div class="hero-body">
     <div class="container">
       <h1 class="title has-text-white is-size-1 is-uppercase has-text-weight-bold">
-        {{site.title}}
+        {{ site.title }}
       </h1>
       <h3 class="subtitle has-text-white-bis is-uppercase has-text-weight-medium is-marginless">
-        {{site.description}}
+        {{ site.description }}
       </h3>
       <hr>
-      <a href="{{ site.url }}{{ site.baseurl | relative_url }}/#about"
-        class="button is-white is-rounded is-outlined is-uppercase has-text-weight-normal">About</a>
-      </a>
-      <a href="{{ site.url }}{{ site.baseurl | relative_url }}/projects"
-        class="button is-white is-rounded is-outlined is-uppercase has-text-weight-normal">Projects</a>
-      </a>
+      <a href="{{ '/#about' | absolute_url }}" class="button is-white is-rounded is-outlined is-uppercase has-text-weight-normal">About</a>
+      <a href="{{ '/projects' | absolute_url }}" class="button is-white is-rounded is-outlined is-uppercase has-text-weight-normal">Projects</a>
     </div>
   </div>
 </section>

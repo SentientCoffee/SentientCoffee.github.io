@@ -43,7 +43,12 @@ For more information about writing markdown you can checkout the following markd
 `Codes on your post will look like this`
 
 ```cpp
-const std::string s = "Code blocks will look like this"
+#include <string>
+
+int main(int argc, char **argv) {
+    const std::string s = "Code blocks will look like this";
+    return 0;
+}
 ```
 
 **Link in the post will look like:**  

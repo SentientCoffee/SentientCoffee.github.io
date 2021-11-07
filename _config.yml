@@ -4,14 +4,14 @@ markdown: kramdown
 # URL of the Site
 url: https://sentientcoffee.github.io
 # Base URL of the Site (i.e., Name of the Repository in which the Site is hosted)
-# baseurl:
+baseurl: /
 
 # Title of the Site
 title: Daniel Presas
 # Description of the Site
 description: Programmer for tools, graphics, and networking
 # URL of Image of the Site
-site-image: /assets/images/meta.jpg
+site-image: assets/images/despresso.png
 # Keywords of the Site
 site-keywords: programmer, graphics, networking, engine, tools, systems
 # URL for the Image of custom Favicon
@@ -44,7 +44,7 @@ dribbble_username:  # /
 # Name of the Author
 author-name: Daniel Presas
 # URL for the Image of the Author
-author-image: /assets/images/linkedin.jpg
+author-image: assets/images/linkedin.jpg
 # 60 Words About the Author
 author-about: >
   Experienced game engine and software tools developer with experience in a multitude of languages,
@@ -58,7 +58,8 @@ author-about-long: >
   and advance the tools and technologies we use on a daily basis so that other people can work better, and reach their
   goals more effectively.
 # URL to the Author's Profile (i.e., Github, Twitter, Stackoverflow, etc)
-author-url: https://github.com/SentientCoffee
+# author-url: https://github.com/SentientCoffee
+resume: assets/docs/Daniel-Presas-Resume-Nov2021.pdf
 
 # SASS
 sass:
@@ -83,12 +84,12 @@ collections:
     output: true
     permalink: ":collection/:slug"
 
-# Defaults
+# Front matter defaults
 defaults:
   -
     scope:
       path: ""
-      type: "posts"
+      type: posts
     values:
       layout: post
       post-image: ""
@@ -98,7 +99,7 @@ defaults:
   -
     scope:
       path: ""
-      type: "pages"
+      type: pages
     values:
       layout: page
   -

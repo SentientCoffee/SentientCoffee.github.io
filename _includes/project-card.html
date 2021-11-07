@@ -3,14 +3,14 @@
   {% for project in sorted_projects %}
   <div class="column has-text-centered is-paddingless is-marginless is-one-third-widescreen is-one-third-desktop is-one-third-fullhd is-one-third-tablet is-two-fifths-mobile is-three-quarters-touch"
        id="project-card">
-    <a href="{{ site.url }}{{ site.baseurl | relative_url }}{{ project.url }}">
+    <a href="{{ project.url | absolute_url }}">
       <div class="has-background-black card">
         {% assign u = project.image | split: "/" | first %}
         {% case u %}
         {% when "http:", "https:" %}
         <figure class="image is-3by1" style="background-image: url({{ project.image }});"></figure>
         {% else %}
-        <figure class="image is-3by1" style="background-image: url({{ site.url }}{{ site.baseurl | relative_url }}/{{ project.image }});"></figure>
+        <figure class="image is-3by1" style="background-image: url({{ project.image | absolute_url }});"></figure>
         {% endcase %}
         <div class="card-content">
           <h1 class="title has-text-white is-size-4">{{ project.name }}</h1>
