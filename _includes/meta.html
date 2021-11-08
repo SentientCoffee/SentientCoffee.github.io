@@ -8,29 +8,30 @@
 <title>{{ site.title }}{% if page.title %} | {{ page.title }}{% endif %}</title>
 
 <!-- Open Graph general (Facebook, Pinterest & Google+) -->
-<meta name="og:title" content="{{ site.title }}{% if page.title %} | {{ page.title }}{% endif %}">
-<meta name="og:description" content="{% if page.layout == 'post' or page.layout == 'project-page' %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
-<meta name="og:image" content="{% if page.layout == 'post' %}{{ page.post-image | absolute_url }}{% elsif page.layout == 'project-page' %}{{ page.image | absolute_url }}{% else %}{{ site.site-image | absolute_url }}{% endif %}">
-<meta name="og:image:alt" content="{{ site.title }}{% if page.title %} | {{ page.title }}{% endif %}">
-<meta name="og:url" content="{{ page.url | absolute_url }}">
-<meta name="article:author" content="https://www.facebook.com/{{ site.facebook_username }}">
-<meta name="og:site_name" content="{{ site.title }}{% if page.title %} | {{ page.title }}{% endif %}">
-<meta name="og:type" content="website">
+<meta property="og:title"       content="{{ site.title }}{% if page.title %} | {{ page.title }}{% endif %}">
+<meta property="og:description" content="{% if page.layout == 'post' or page.layout == 'project-page' %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+<meta property="og:image"       content="{% if page.layout == 'post' %}{{ page.post-image | absolute_url }}{% elsif page.layout == 'project-page' %}{{ page.image | absolute_url }}{% else %}{{ site.site-image | absolute_url }}{% endif %}">
+<meta property="og:image:alt"   content="{{ site.title }}{% if page.title %} | {{ page.title }}{% endif %}">
+<meta property="og:url"         content="{{ page.url | absolute_url }}">
+<meta property="og:site_name"   content="{{ site.title }}{% if page.title %} | {{ page.title }}{% endif %}">
+<meta property="og:type"        content="website">
+<meta property="article:author" content="https://www.facebook.com/{{ site.facebook_username }}">
 <!-- Twitter -->
-<meta property="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="{{ site.title }}{% if page.title %} | {{ page.title }}{% endif %}">
+<meta name="twitter:card"        content="summary_large_image" />
+<meta name="twitter:title"       content="{{ site.title }}{% if page.title %} | {{ page.title }}{% endif %}">
 <meta name="twitter:description" content="{% if page.layout == 'post' or page.layout == 'project-page' %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
-<meta name="twitter:site" content="@{{ site.twitter_username }}">
-<meta name="twitter:creator" content="@{{ site.twitter_username }}">
-<meta name="twitter:image:src" content="{% if page.layout == 'post' %}{{ page.post-image | absolute_url }}{% elsif page.layout == 'project-page' %}{{ page.image | absolute_url }}{% else %}{{ site.site-image | absolute_url }}{% endif %}">
+<meta name="twitter:site"        content="@{{ site.twitter_username }}">
+<meta name="twitter:creator"     content="@{{ site.twitter_username }}">
+<meta name="twitter:image"       content="{% if page.layout == 'post' %}{{ page.post-image | absolute_url }}{% elsif page.layout == 'project-page' %}{{ page.image | absolute_url }}{% else %}{{ site.site-image | absolute_url }}{% endif %}">
+<meta name="twitter:image:alt"   content="{{ site.title }}{% if page.title %} | {{ page.title }}{% endif %}">
 <!-- Search Engine -->
 <meta name="description" content="{% if page.layout == 'post' or page.layout == 'project-page' %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
-<meta name="image" content="{% if page.layout == 'post' %}{{ page.post-image | absolute_url }}{% elsif page.layout == 'project-page' %}{{ page.image | absolute_url }}{% else %}{{ site.site-image | absolute_url }}{% endif %}">
+<meta name="image"       content="{% if page.layout == 'post' %}{{ page.post-image | absolute_url }}{% elsif page.layout == 'project-page' %}{{ page.image | absolute_url }}{% else %}{{ site.site-image | absolute_url }}{% endif %}">
 <!-- Schema.org for Google -->
-<meta itemprop="name" content="{{ site.title }}{% if page.title %} | {{ page.title }}{% endif %}">
-<meta name="author" content="{{ site.author-name }}" />
+<meta name="author"          content="{{ site.author-name }}" />
+<meta itemprop="name"        content="{{ site.title }}{% if page.title %} | {{ page.title }}{% endif %}">
 <meta itemprop="description" content="{% if page.layout == 'post' or page.layout == 'project-page' %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
-<meta itemprop="image" content="{% if page.layout == 'post' %}{{ page.post-image | absolute_url }}{% elsif page.layout == 'project-page' %}{{ page.image | absolute_url }}{% else %}{{ site.site-image | absolute_url }}{% endif %}">
+<meta itemprop="image"       content="{% if page.layout == 'post' %}{{ page.post-image | absolute_url }}{% elsif page.layout == 'project-page' %}{{ page.image | absolute_url }}{% else %}{{ site.site-image | absolute_url }}{% endif %}">
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google-analytics }}"></script>
