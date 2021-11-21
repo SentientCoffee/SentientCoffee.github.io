@@ -15,7 +15,7 @@ site-image: assets/images/despresso.png
 # Keywords of the Site
 site-keywords: programmer, graphics, networking, engine, tools, systems
 # URL for the Image of custom Favicon
-favicon-url: /assets/images/despresso.png
+favicon-url: assets/images/despresso.png
 
 # URL of the Image of Custom Hero Image (i.e., the image in the background of the very first section of the Homepage)
 heroimage: https://p1.pxfuel.com/preview/793/318/452/source-code-code-programming-c.jpg
@@ -27,11 +27,12 @@ github_username:    SentientCoffee
 itchio_username:    SentientCoffee
 linkedin_username:  daniel-presas
 twitter_username:   sentientcoffee
-youtube_channel_id: # UCk_93NXYP-U_AOB5GfWlOow
+youtube_channel_id: UCZeX0TBsA_-vhXRCe1Tb51Q
+twitch_username:    # sentientcoffee
 reddit_username:    # /
 spotify_username:   # /
-facebook_username:  # thedevslot
-instagram_username: # thedevslot
+facebook_username:  # /
+instagram_username: # /
 behance_username:   # /
 dribbble_username:  # /
 
@@ -64,7 +65,6 @@ resume: assets/docs/Daniel-Presas-Resume-Nov2021.pdf
 # SASS
 sass:
   sass_dir: _sass
-  style: compressed
 
 # Build settings
 plugins:

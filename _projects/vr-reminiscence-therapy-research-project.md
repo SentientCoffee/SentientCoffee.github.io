@@ -3,7 +3,7 @@ name: VR Reminiscence Therapy
 slug: vr-reminiscence-therapy
 year: 202102
 image: https://img1.wsimg.com/isteam/ip/84397a79-be1f-4af1-97da-40b794b2feb0/photos-256889_1920.jpg
-link: https://maxsimhealth.com/winniesun2021
+link: https://www.resna.org/sites/default/files/conference/2020/AgingCognitiveSensory/142Sun.html#Title
 # video_link:
 description: >
   Interdisciplinary collaboration between the researchers from Ontario Tech University and healthcare professionals in the Geriatric Dementia Unit at Ontario Shores Centre for Mental Health Sciences.

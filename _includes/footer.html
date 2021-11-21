@@ -96,6 +96,14 @@
           </a>
         </li>
         {% endunless %}
+        {% unless site.twitch_username == %}
+        <li>
+          <a href="https://twitch.tv/{{ site.twitch_username }}" target="_blank" class="has-text-grey">
+            <i class="fa-li fa-fw fab fa-twitch has-text-white"></i>
+            Twitch
+          </a>
+        </li>
+        {% endunless %}
         {% unless site.reddit_username == %}
         <li>
           <a href="https://reddit.com/u/{{ site.reddit_username }}" target="_blank" class="has-text-grey">
